@@ -4,6 +4,8 @@ on:
   push:
     tags:
       - 'v\d+'
+permissions:
+  contents: write
 jobs:
   create_release_branch:
     name: Create release branch
