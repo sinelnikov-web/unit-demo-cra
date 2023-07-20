@@ -28,3 +28,4 @@ test-report.html
 /playwright/.cache/
 **/.idea
 test.ci
+test.do
