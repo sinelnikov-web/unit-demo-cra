@@ -13,7 +13,7 @@ jobs:
     steps:
       - uses: actions/checkout@v3
         with:
-          token: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.GH_ACCESS_TOKEN }}
 
       - name: Create release branch
         run: |
@@ -53,7 +53,7 @@ jobs:
 
       - name: Create release issue
         env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_TOKEN: ${{ secrets.GH_ACCESS_TOKEN }}
         run: |
           ISSUE_TITLE="Release ${{ github.ref_name }}"
           ISSUE_BODY=$(cat << EOF
