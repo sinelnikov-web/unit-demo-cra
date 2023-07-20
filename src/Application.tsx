@@ -15,6 +15,7 @@ export const Application: FC = () => {
           Home
         </Link>
         <Link to="/about">About</Link>
+        <Link to="/test">Test</Link>
       </nav>
       <Routes>
         <Route path="/about" element={about} />
